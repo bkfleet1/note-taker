@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { getNotes, getNote, validateNote, saveNote, deleteNote } = require("../../lib/notes");
-// const db = require("../db/db");
+const db = require("../../db/db.json");
 
 
 router.get("/notes", (req, res) => {
@@ -31,7 +31,7 @@ router.post("/notes", (req, res) => {
 router.delete('/notes/:id', (req, res) => {
   let results = deleteNote(req.params.id);
   if (results) {
-  res.json(results);
+  res.json(db);
   } else {
     res.status(404).send('Opps! Something went wrong.');
   }
