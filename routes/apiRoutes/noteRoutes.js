@@ -31,7 +31,7 @@ router.post("/notes", (req, res) => {
 router.delete('/notes/:id', (req, res) => {
   let results = deleteNote(req.params.id);
   if (results) {
-  res.json(results);
+  res.json(db);
   } else {
     res.status(404).send('Opps! Something went wrong.');
   }
