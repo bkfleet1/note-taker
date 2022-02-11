@@ -3,12 +3,10 @@
 ## [Description](#description)
 Note Taker is a simple web-app to your capture notes, thoughts, and tasks. Written in Javascript and leveraging Node and Express to support CRUD APIs to manage data.
 
-
 ![Note Taker Repo Size](https://img.shields.io/github/repo-size/bkfleet1/note-taker?style=plastic)
+>> - Heroku Deployment URL: https://note-takr22.herokuapp.com
 >> - Project Repository URL: https://github.com/bkfleet1/note-taker
 ![Note Taker repository](./assets/images/repository.png)
-
-![Heroku Deployment](https://note-takr22.herokuapp.com/)
 
 
 ## Table of Contents
@@ -24,8 +22,8 @@ Note Taker is a simple web-app to your capture notes, thoughts, and tasks. Writt
 ## [Developer](#developer)
 [Brad Kelley](mailto:bradkelleytech@gmail.com)
 
-![70.3% Javascript](https://img.shields.io/badge/javascript-70.3%25-green) ![20.2% HTML5](https://img.shields.io/badge/HTML5-20.2%25-blue)  ![9.5% CSS](https://img.shields.io/badge/CSS-9.5%25-lightgrey)
 ## [Resources](#resources)
+![70.3% Javascript](https://img.shields.io/badge/javascript-70.3%25-green) ![20.2% HTML5](https://img.shields.io/badge/HTML5-20.2%25-blue)  ![9.5% CSS](https://img.shields.io/badge/CSS-9.5%25-lightgrey)
 The following resources were used in the development of this project.
 > * Javascript
 > * HTML5
@@ -47,8 +45,8 @@ The following steps are required to execute the Note Taker code.
 
 ## [Use Instructions](#usage)
 After the installation process, you will need to start the Express server. Just open the project in a terminal application, such as git bash, and type "npm start" and press enter. The image below illustrates the process of starting the Express server.
-![Initiate Express Server](./assets/images/express.png)
 
+![Initiate Express Server](./assets/images/express.png)
 
 Now that the Express server is started, you can open a web browser and go to the URL: http://localhost:3001. You should see the following page on application launch.
 ![Note Taker Welcome Page](./assets/images/deployed1.png)
