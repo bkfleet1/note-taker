@@ -11,7 +11,7 @@ router.get("/notes", (req, res) => {
 router.get("/notes/:id", (req, res) => {
   let results = getNote(req.params.id);
   if (results) {
-  res.json(results);
+  res.json(db);
   } else {
     res.send(404);
   }
@@ -31,9 +31,9 @@ router.post("/notes", (req, res) => {
 router.delete('/notes/:id', (req, res) => {
   let results = deleteNote(req.params.id);
   if (results) {
-  res.json(db);
+  res.json(results);
   } else {
-    res.status(404).send('Opps! Something went wrong.');
+    res.status(400).send('Opps! Something went wrong.');
   }
 });  
 

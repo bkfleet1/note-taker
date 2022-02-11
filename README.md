@@ -1,35 +1,66 @@
-# note-taker
-A simple web-app to your capture notes, thoughts, and tasks. Written in Javascript and leveraging Node and Express to support CRUD APIs to manage data.
+# [Note Taker](#title)
+
+## [Description](#description)
+Note Taker is a simple web-app to your capture notes, thoughts, and tasks. Written in Javascript and leveraging Node and Express to support CRUD APIs to manage data.
 
 
-## User Story
-As a small business owner, I want to be able to write and save notes so that I can organize my thoughts and keep track of tasks I need to complete
+![Note Taker Repo Size](https://img.shields.io/github/repo-size/bkfleet1/note-taker?style=plastic)
+>> - Project Repository URL: https://github.com/bkfleet1/note-taker
+![Note Taker repository](./assets/images/repository.png)
 
-## Acceptance Criteria
-Given a note-taking application:
->> - 1. When I open the Note Taker, then I am presented with a landing page with a link to a notes page;
-
->> - 2. When I click on the link to the notes page, then I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column;
-
->> - 3. When I enter a new note title and the note’s text, then a Save icon appears in the navigation at the top of the page;
-
->> - 4. When I click on the Save icon, then the new note I have entered is saved and appears in the left-hand column with the other existing notes;
-
->> - 5. When I click on an existing note in the list in the left-hand column, then that note appears in the right-hand column; and
-
->> - 6. When I click on the Write icon in the navigation at the top of the page, then I am presented with empty fields to enter a new note title and the note’s text in the right-hand column.
+![Heroku Deployment](https://note-takr22.herokuapp.com/)
 
 
-## Getting Started
->> - 1. The application should have a db.json file on the back end that will be used to store and retrieve notes using the fs module.
+## Table of Contents
+> * [Title](#title)
+> * [Description](#description)
+> * [Developer](#developer)
+> * [Resources](#resources)
+> * [Installation](#installation) 
+> * [Use Instructions](#usage)
+> * [Tests](#tests)
+> * [Questions](#questions)
 
->> - 2. The following HTML routes should be created:
->>> * GET /notes should return the notes.html file.
->>> * GET * should return the index.html file.
+## [Developer](#developer)
+[Brad Kelley](mailto:bradkelleytech@gmail.com)
 
->> - 3. The following API routes should be created:
->>> * GET /api/notes should read the db.json file and return all saved notes as JSON.
->>> * POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+![70.3% Javascript](https://img.shields.io/badge/javascript-70.3%25-green) ![20.2% HTML5](https://img.shields.io/badge/HTML5-20.2%25-blue)  ![9.5% CSS](https://img.shields.io/badge/CSS-9.5%25-lightgrey)
+## [Resources](#resources)
+The following resources were used in the development of this project.
+> * Javascript
+> * HTML5
+> * CSS
+> * Node.js
+> * NPM
+> * Express
+> * Express Router
+> * UUID
 
->> - 4. DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file.
+## [Installation](#installation)
+The following steps are required to execute the Note Taker code.
 
+> 1. Clone the repository located at: https://github.com/bkfleet1/note-taker.
+> 2. Install Node.js. You can download the latest version of Node.js at https://nodejs.org/en/ ;
+> 3. Open the project in a terminal application, such as git bash, and install NPM. To install npm, simply type "npm install" and press enter. Don't close your terminal application, we have a couple more items to install;
+> 4. Next install Express, which is a package that provides a local web server to enable web-pages and APIs. To install Express simply type "npm install express" and press enter;
+> 5. Finally you will need to install UUID, which is used to generate unique IDs that are assigned to each note. You can install UUIS by typing "npm install uuid" and press enter.
+
+## [Use Instructions](#usage)
+After the installation process, you will need to start the Express server. Just open the project in a terminal application, such as git bash, and type "npm start" and press enter. The image below illustrates the process of starting the Express server.
+![Initiate Express Server](./assets/images/express.png)
+
+
+Now that the Express server is started, you can open a web browser and go to the URL: http://localhost:3001. You should see the following page on application launch.
+![Note Taker Welcome Page](./assets/images/deployed1.png)
+
+
+You can then click on the Get Started button in the middle of the page to access the application's notes management screen shown below.
+![Notes Management Screen](./assets/images/deployed2.png)
+
+The application have very simple features to create a NEW note, SAVE a note, and DELETE a note.
+
+## [Tests](#tests)
+No testing available
+
+## [Questions](#questions)
+Please email [Brad Kelley](mailto:bradkelleytech@gmail.com) with any project questions.
